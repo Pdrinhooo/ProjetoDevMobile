@@ -1,8 +1,8 @@
 // log -> registro
-console.log();
+console.log("Hello");
 
 // error -> exibe mensagens de erro
-console.error("Deu erro!");
+console.error(new Error("Deu erro!"));
 
 // table -> exibe informações tabuladas de forma mais organizada
 let lista = ["ayo", "what da dog doin", 55];
