@@ -1,0 +1,11 @@
+DATA: 05/09/2023
+
+IMPORTANTE: node_modules não precisa ser transferido e pode ser instalado com 'npm install expo'.
+
+Para ocultar o texto da senha, adicionar a propriedade secureTextEntry={true} no TextInput da senha.
+Outros itens utilizados: useState, value, onChangeText, onPress
+
+Em casa: 
+	- baixar Strapi; 
+	- fazer login; 
+	- criar modelo de dados de teste;
