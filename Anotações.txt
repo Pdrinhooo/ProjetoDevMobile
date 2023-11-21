@@ -5,6 +5,26 @@ IMPORTANTE: node_modules não precisa ser transferido e pode ser instalado com '
 Para ocultar o texto da senha, adicionar a propriedade secureTextEntry={true} no TextInput da senha.
 Outros itens utilizados: useState, value, onChangeText, onPress
 
+Para baixar o strapi: npx create-strapi-app@latest my-project --quickstart
+
+---------------------------------------------------------------------------------------------------------------
+
+antes do return em App.js:
+let [filmes, setFilmes] = useState([]);
+
+const baseURL = 'https://api.publicapis.org/entries'
+
+useEffect(function(){
+	fetch(baseURL)
+        	.then(data => data.json())
+        	.then(objeto => {
+        		console.log(objeto);
+        		setFilmes(objeto.data);
+            	})
+}, [])
+
+---------------------------------------------------------------------------------------------------------------
+
 Em casa: 
 	- baixar Strapi; 
 	- fazer login; 
